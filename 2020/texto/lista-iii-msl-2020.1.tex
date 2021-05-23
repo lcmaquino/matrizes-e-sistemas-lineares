@@ -1,0 +1,170 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\DeclareMathOperator{\sen}{sen}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Matrizes e Sistemas Lineares. \quad Semestre: 2020/1\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \textbf{Lista de Exercícios III}
+\end{center}
+
+\begin{enumerate}
+  \item Em cada item abaixo dê exemplo de uma matriz $4\times 4$ que atenda aos requisitos solicitados.
+    \begin{enumerate}
+      \item Todos os termos não são nulos e o determinante é igual a 5.
+      \item Todos os termos são irracionais e o determinante é racional.
+    \end{enumerate}
+
+  \item Dizemos que uma matriz $A$ é ortogonal quando sua transposta coincide
+    com sua inversa (ou seja, quando $A^t= A^{-1}$). Considerando a matriz
+    $R_\theta=
+      \begin{bmatrix}
+        \cos \theta & -\sen \theta  \\
+        \sen \theta & \cos \theta
+      \end{bmatrix}$,
+    responda aos quesitos abaixo.
+
+    \begin{enumerate}
+      \item Determine $R_{\frac{\pi}{2}}$.
+      \item Determine $R_{\left(-\frac{\pi}{2}\right)}$.
+      \item Mostre que $R_\theta$ é ortogonal.
+      \item Mostre que $R_\alpha R_{\beta}=R_{\alpha +\beta}$.
+    \end{enumerate}
+
+  \item Considere a matriz
+    $A=
+      \begin{bmatrix}
+        1 & 0 & 8 \\
+        1 & 2 & 3 \\
+        2 & 5 & 3
+      \end{bmatrix}$
+
+    \begin{enumerate}
+      \item Determine a inversa de $A$.
+      \item Usando o item (a), resolva o sistema linear abaixo:
+      $$\begin{cases}
+        x +  8 z  =  4\\
+        x  +  2y  +  3z  =  0\\
+        2x  +  5y  +  3z  =  -2
+      \end{cases}$$
+    \end{enumerate}
+
+  \item O termo $a_{ij}$ de uma matriz $A$ de ordem $10\times 10$ é tal que:
+    $$a_{ij} = \begin{cases}i+j;\,i\geq j \\ 0;\,i<j\end{cases}.$$ O valor do
+    determinante de $A$ é igual a:
+    
+    \begin{tabular}{lllll}
+      (a) $2^{10}\left(10!\right)$. & (b) $2(10!)$. & (c) $10^2(10!)$. & (d) $2\left(10^{10}\right)$. & (e) $2^{55}$.
+    \end{tabular}
+
+  \item Calcule o determinante da matriz $A$ de três formas distintas: pela
+    definição geral; pelo método de Sarrus; por redução à matriz triangular
+    superior. 
+    $$A=\begin{bmatrix}
+      5 & -10 & -1\\
+      -2 & 5 & 2\\
+      -3 & 6 & 1
+    \end{bmatrix}$$
+
+  \item Sabe-se que o determinante da matriz
+    $A=\begin{bmatrix}
+      p & 2 & 2\\
+      p & 4 & 4\\
+      p & 4 & 1
+    \end{bmatrix}$ é $-18$. Sendo assim, calcule
+    o determinante da matriz
+    $B=\begin{bmatrix}
+      p & 2 & 2\\
+      4 & p & 4\\
+      4 & 1 & p
+    \end{bmatrix}$.
+
+  \item Seja a matriz
+    $A=\begin{bmatrix} -13 & 36 \\ -\dfrac{9}{2} & 14 \end{bmatrix}$.
+    Determine o valor de $\lambda$ tal que $\det(A-\lambda I) = 0$.
+
+  \item Calcule a inversa das matrizes abaixo:
+
+  $$A=\begin{bmatrix}
+      6 & 2\\
+      4 & 3
+    \end{bmatrix},\,
+    B=\begin{bmatrix}
+      1 & -2 & 2\\
+      2 & -3 & 6\\
+      1 & 1 & 7
+    \end{bmatrix}\textrm{ e }
+    C=\begin{bmatrix}
+      1 & 1 & 1 & 1\\
+      1 & 2 & -1 & 2\\
+      1 & -1 & 2 & 1\\
+      1 & 3 & 3 & 2
+    \end{bmatrix}$$
+
+  \item  Prove que se $A = B^{-1}CB$, então $A^n = B^{-1}C^nB$ para todo $n\in\mathbb{N}$.
+    (Observação: por convenção considere que $M^0=I$, para toda matriz quadrada $M$.)
+
+  \item Vamos usar operações com matrizes para criptografar uma mensagem.
+    Primeiro, converta cada letra da mensagem em um número, como indica
+    a tabela abaixo. Cada grupo de três letras, formará uma linha da matriz
+    de mensagem $M$, de ordem $3\times3$. Agora, escolha uma matriz
+    inversível $S$, de ordem $3\times3$, para ser a chave da criptografia.
+    Para determinar a mensagem criptografada $C$, calculamos $C=SM$.
+    Já para recuperar a mensagem original, calculamos $M=S^{-1}C$.
+
+    \begin{center}
+      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+      \hline 
+      A & B & C & D & E & F & G & H & I & J & K & L & M\\
+      \hline 
+      1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\
+      \hline 
+      \hline 
+      N & O & P & Q & R & S & T & U & V & W & X & Y & Z\\
+      \hline 
+      14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 & 26\\
+      \hline 
+      \end{tabular}
+  \end{center}
+
+  Considerando que a chave de criptografia é a matriz
+    $S=\begin{bmatrix}
+      1 & -2 & 2\\
+      2 & -3 & 6\\
+      1 & 1 & 7
+    \end{bmatrix}$ e a mensagem criptografada é
+    $C=\begin{bmatrix}
+      -13 & -4 & 15 \\
+      -4 & 3 & 80 \\
+      48 & 28 & 147
+      \end{bmatrix}$, qual é a mensagem original?
+\end{enumerate}
+
+\end{document}

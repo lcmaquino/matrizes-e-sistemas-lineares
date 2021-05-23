@@ -1,0 +1,107 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Matrizes e Sistemas Lineares. \quad Semestre: 2020/1\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+ \textbf{Avaliação I -- 2ª Chamada}
+\end{center}
+
+\textbf{Instruções}
+\begin{itemize}
+ \item Todas as justificativas necessárias na solução de cada questão devem estar presentes nesta avaliação;
+ \item As respostas finais de cada questão devem estar escritas de caneta;
+ \item Esta avaliação tem um total de 30,0 pontos.
+\end{itemize}
+
+\begin{enumerate}
+  \item \textbf{[5,0 pontos]} Dizemos que duas matrizes $A$ e $B$ comutam quando $AB=BA$. Sendo
+    $B=\left[\begin{array}{rr}
+      2 & 1\\
+      0 & 1
+    \end{array}\right]$, determine o formato de todas as matrizes $A$ que comutam com $B$.
+
+  \item \textbf{[5,0 pontos]} Dadas as matrizes
+    $A=
+      \begin{bmatrix}
+        1 & 3 \\
+        2 & 5
+      \end{bmatrix},
+      \ \ \ 
+    B=\begin{bmatrix}
+      2 & x \\
+      -1 & y
+    \end{bmatrix}$ e 
+    $C=\begin{bmatrix}
+      9 & 3 \\
+      3 & 1
+    \end{bmatrix}$, determine:
+
+    \begin{enumerate}
+      \item $x , y \in\mathbb{R}$ tais que $AC=BC$.
+     \item quando temos $AC=BC$, podemos ``cancelar'' $C$ e dizer que $A=B$? Explique sua resposta.
+    \end{enumerate}
+
+  \item \textbf{[5,0 pontos]} Sejam $A$ e $B$ duas matrizes quadradas de mesma ordem. Prove que:
+    \begin{enumerate}
+      \item $\left(A^t\right)^t = A$;
+      \item $\left(\alpha A\right)^t = \alpha(A^t)$, com $\alpha\in\mathbb{R}$;
+      \item $(A + B)^t = A^t + B^t$;
+      \item $(A - B)^t = A^t - B^t$.
+    \end{enumerate}
+
+  \item \textbf{[4,0 pontos]} Resolva o sistema de equações lineares:
+    $$\begin{cases}
+      x +  8 y  =  2\\
+      x  +  3y  +  2z  =  -2\\
+      2x  +  3y  +  5z  =  -6
+    \end{cases}$$
+    
+  \item \textbf{[4,0 pontos]} Sejam as matrizes $A_{n\times n}$, $x_{n\times 1}$ e $\bar{0}_{n\times 1}$. Prove 
+    que se as matrizes $x_1$ e $x_2$ (ambas $n\times 1$) são soluções da equação 
+    $Ax = \bar{0}$, então a matriz $\alpha x_1 + \beta x_2$, com $\alpha,\,\beta\in\mathbb{R}$, 
+    também é uma solução dessa equação.
+    
+  \item \textbf{[7,0 pontos]} Considere as matrizes 
+    $A = \begin{bmatrix} 1 & -1 & 2 \\ 4 & 1 & -1 \\ 1 & -1 & 1\end{bmatrix}$ e 
+    $b = \begin{bmatrix} 4 \\ 1 \\ 2\end{bmatrix}$. Determine:
+    
+    \begin{enumerate}
+      \item as matrizes $L = \begin{bmatrix} 1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & l_{32} & 1\end{bmatrix}$ 
+        e $U = \begin{bmatrix} u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33}\end{bmatrix}$ 
+        tais que $A = LU$;
+      \item a matriz $y_{3\times 1}$ tal que $Ly = b$;
+      \item a matriz $x_{3\times 1}$ tal que $Ux = y$.
+    \end{enumerate}
+    
+    Por fim, verifique que a matriz $x_{3\times 1}$ encontrada no item (c) 
+    é solução da equação $Ax = b$.
+   
+  \end{enumerate}
+\end{document}
