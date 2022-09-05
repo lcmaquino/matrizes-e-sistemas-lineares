@@ -1,0 +1,114 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\DeclareMathOperator{\sen}{sen}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Matrizes e Sistemas Lineares. \quad Semestre: 2021/1\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \textbf{Lista III}
+\end{center}
+
+\begin{enumerate}
+  \item Resolva o sistema de equações lineares:
+    $$\begin{cases}
+      x +  8 z  =  4\\
+      x  +  2y  +  3z  =  0\\
+      2x  +  5y  +  3z  =  -2
+    \end{cases}$$
+
+  \item Um fabricante de móveis produz cadeiras, mesinhas de centro e mesas
+    de jantar. Cada cadeira leva 10 minutos para ser lixada, 6 minutos
+    para ser tingida e 12 minutos para ser envernizada. Cada mesinha de
+    centro leva 12 minutos para ser lixada, 8 minutos para ser tingida
+    e 12 minutos para ser envernizada. Cada mesa de jantar leva 15 minutos
+    para ser lixada, 12 minutos para ser tingida e 18 minutos para ser
+    envernizada. A bancada para lixar fica disponível 1.340 minutos por
+    semana, a bancada para tingir 940 minutos por semana e a bancada para
+    envernizar 1.560 minutos por semana. Quantos móveis devem ser fabricados
+    (por semana) de cada tipo para que as bancadas sejam plenamente utilizadas?
+
+  \item Considere as matrizes 
+    $A = \begin{bmatrix} 1 & -1 & 2 \\ 4 & 1 & -1 \\ 1 & -1 & 1\end{bmatrix}$ e 
+    $b = \begin{bmatrix} 4 \\ 1 \\ 2\end{bmatrix}$. Determine:
+    
+    \begin{enumerate}
+      \item as matrizes $L = \begin{bmatrix} 1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & l_{32} & 1\end{bmatrix}$ 
+        e $U = \begin{bmatrix} u_{11} & u_{12} & u_{13} \\ 0 & u_{22} & u_{23} \\ 0 & 0 & u_{33}\end{bmatrix}$ 
+        tais que $A = LU$;
+      \item a matriz $y_{3\times 1}$ tal que $Ly = b$;
+      \item a matriz $x_{3\times 1}$ tal que $Ux = y$.
+    \end{enumerate}
+    
+    Por fim, verifique que a matriz $x_{3\times 1}$ encontrada no item (c) 
+    é solução da equação $Ax = b$.
+
+  \item Sejam as matrizes $A_{n\times n}$, $x_{n\times 1}$ e 
+    $\bar{0}_{n\times 1}$ (isto é, matriz nula de ordem $n\times 1$).
+    Prove que se as matrizes $x_1$ e $x_2$ (ambas $n\times 1$) são
+    soluções da equação $Ax = \bar{0}$, então a matriz $\alpha x_1 + \beta x_2$,
+    com $\alpha,\,\beta\in\mathbb{R}$, também é uma solução dessa equação.
+
+\end{enumerate}
+  
+\begin{center}
+  \textbf{Gabarito}
+\end{center}
+
+[1] $x = 4$, $y = -2$ e $z = 0$. 
+[2] $x = 50$, $y = 20$ e $z = 40$.  
+[3]
+(a) $L =
+  \begin{bmatrix}
+    1 & 0 & 0 \\
+    4 & 1 & 0 \\
+    1 & 0 & 1
+  \end{bmatrix}$, 
+$U =
+  \begin{bmatrix}
+    1 & -1 & 2 \\
+    0 & 5 & -9 \\
+    0 & 0 & -1
+  \end{bmatrix}$. 
+(b) $y =
+  \begin{bmatrix}
+    4 \\
+    -15 \\
+    -2
+  \end{bmatrix}$. 
+(c) $x =
+  \begin{bmatrix}
+    \dfrac{3}{5}\\ \\
+    \dfrac{3}{5}\\ \\
+    2
+  \end{bmatrix}$. 
+
+[4] Sugestão: desenvolva a expressão $A(\alpha x_1 + \beta x_2)$ para obter $\bar{0}$. 
+
+\end{document}

@@ -1,0 +1,103 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\DeclareMathOperator{\sen}{sen}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Matrizes e Sistemas Lineares. \quad Semestre: 2021/1\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+ \textbf{Avaliação III}
+\end{center}
+
+\textbf{Instruções}
+\begin{itemize}
+ \item Todas as justificativas necessárias na solução de cada questão devem estar presentes nesta avaliação;
+ \item As respostas finais de cada questão devem estar escritas de caneta;
+ \item Esta avaliação tem um total de 35,0 pontos.
+\end{itemize}
+
+\begin{enumerate}
+  \item \textbf{[5,0 pontos]} Classifique o seguinte sistema de equações lineares em SPD, SPI ou SI.
+  $$
+    \begin{cases}
+      -x + y + z = 8 \\
+      2x - y - 2z = 4 \\
+      x - z = 10
+    \end{cases}
+  $$
+
+  \item \textbf{[5,0 pontos]} Prove que se $A$ é uma matriz invertível, então
+  $\det A^{-1} = \dfrac{1}{\det A}$.
+
+  \item Dizemos que uma matriz $A$ é ortogonal quando sua transposta coincide
+    com sua inversa (ou seja, quando $A^t= A^{-1}$). Considerando a matriz
+    $R_\theta=
+      \begin{bmatrix}
+        \cos \theta & -\sen \theta  \\
+        \sen \theta & \cos \theta
+      \end{bmatrix}$,
+    responda aos quesitos abaixo.
+
+    \begin{enumerate}
+      \item \textbf{[1,0 pontos]} Determine $R_{\frac{\pi}{4}}$.
+      \item \textbf{[1,0 pontos]} Determine $R_{\left(-\frac{\pi}{3}\right)}$.
+      \item \textbf{[3,0 pontos]} Mostre que $R_\theta$ é ortogonal.
+      \item \textbf{[3,0 pontos]} Mostre que $R_\alpha R_{\beta}=R_{\alpha +\beta}$.
+    \end{enumerate}
+
+  \item \textbf{[7,0 pontos]} Seja o sistema de equações lineares:
+  $$
+  \begin{cases}
+    mx + y = 2 \\
+    x - y = p
+  \end{cases}
+  $$
+
+  Determine o valor de $m$ e $p$ para os quais o sistema seja SI ou SPD.
+    
+  \item \textbf{[10,0 pontos]} Sejam as matrizes:
+  $$
+    D =
+      \begin{bmatrix}
+        2 & 0 & 0 \\
+        0 & \sqrt{3} & 0 \\
+        0 & 0 & -1 \\
+      \end{bmatrix}\quad \textrm{ e }\quad
+    P =
+      \begin{bmatrix}
+        1 & -2 & 2\\
+        2 & -3 & 6\\
+        1 & 1 & 7
+      \end{bmatrix}.
+  $$
+  
+  Se $A = P^{-1}DP$, então calcule a matriz $A^4$.
+
+  \end{enumerate}
+\end{document}

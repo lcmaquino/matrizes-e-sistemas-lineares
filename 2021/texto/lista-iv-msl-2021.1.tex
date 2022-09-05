@@ -1,0 +1,124 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\DeclareMathOperator{\sen}{sen}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Matrizes e Sistemas Lineares. \quad Semestre: 2021/1\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \textbf{Lista IV}
+\end{center}
+
+\begin{enumerate}
+  \item  Dizemos que uma matriz $A$ é ortogonal quando sua transposta coincide
+    com sua inversa (ou seja, quando $A^t= A^{-1}$). Considerando a matriz
+    $R_\theta=
+      \begin{bmatrix}
+        \cos \theta & -\sen \theta  \\
+        \sen \theta & \cos \theta
+      \end{bmatrix}$,
+    responda aos quesitos abaixo.
+
+    \begin{enumerate}
+      \item Determine $R_{\frac{\pi}{2}}$.
+      \item Determine $R_{\left(-\frac{\pi}{3}\right)}$.
+      \item Mostre que $R_\theta$ é ortogonal.
+      \item Mostre que $R_\alpha R_{\beta}=R_{\alpha +\beta}$.
+    \end{enumerate}
+
+  \item Determine o valor de $p$ para que o sistema abaixo seja SPD.
+    $$\begin{cases}
+      3x_1 - x_2 = 2 \\
+      2x_1 + px_2 = -1
+    \end{cases}$$
+
+  \item Prove que se $A = B^{-1}CB$, então $A^n = B^{-1}C^nB$ para todo $n\in\mathbb{N}$.
+    (Observação: por convenção considere que $M^0=I$, para toda matriz quadrada $M$.)
+
+  \item Vamos usar operações com matrizes para criptografar uma mensagem.
+    Primeiro, converta cada letra da mensagem em um número, como indica
+    a tabela abaixo. Cada grupo de três letras, formará uma linha da matriz
+    de mensagem $M$, de ordem $3\times3$. Agora, escolha uma matriz
+    invertível $S$, de ordem $3\times3$, para ser a chave da criptografia.
+    Para determinar a mensagem criptografada $C$, calculamos $C=SM$.
+    Já para recuperar a mensagem original, calculamos $M=S^{-1}C$.
+
+    \begin{center}
+      \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+      \hline 
+      A & B & C & D & E & F & G & H & I & J & K & L & M\\
+      \hline 
+      1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13\\
+      \hline 
+      \hline 
+      N & O & P & Q & R & S & T & U & V & W & X & Y & Z\\
+      \hline 
+      14 & 15 & 16 & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 & 26\\
+      \hline 
+      \end{tabular}
+  \end{center}
+
+  Considerando que a chave de criptografia é a matriz
+    $S=\begin{bmatrix}
+      1 & -2 & 2\\
+      2 & -3 & 6\\
+      1 & 1 & 7
+    \end{bmatrix}$ e a mensagem criptografada é
+    $C=\begin{bmatrix}
+      -13 & -4 & 15 \\
+      -4 & 3 & 80 \\
+      48 & 28 & 147
+      \end{bmatrix}$, qual é a mensagem original?
+
+\end{enumerate}
+  
+\begin{center}
+  \textbf{Gabarito}
+\end{center}
+
+[1] (a)$\begin{bmatrix}
+        0 & -1  \\
+        1 & 0
+      \end{bmatrix}$. 
+(b) $\begin{bmatrix}
+        \dfrac{1}{2} & \dfrac{\sqrt{3}}{2}  \\ \\
+        -\dfrac{\sqrt{3}}{2} & \dfrac{1}{2}
+      \end{bmatrix}$. 
+(c) Sugestão: mostre que $R_\theta R_\theta^t = I$. 
+(d) Sugestão: use as identidades para o seno e o cosseno da soma de arcos. 
+[2] $p \neq -\dfrac{2}{3}$. 
+[3] Sugestão: aplique o Princípio de Indução Finita. 
+[4] $M =
+  \begin{bmatrix}
+    A & L & G \\
+    L & I & N \\
+    E & A & R
+  \end{bmatrix}$ .
+
+\end{document}

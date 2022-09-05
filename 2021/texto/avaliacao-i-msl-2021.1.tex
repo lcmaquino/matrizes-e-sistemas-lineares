@@ -1,0 +1,103 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Matrizes e Sistemas Lineares. \quad Semestre: 2021/1\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+ \textbf{Avaliação I}
+\end{center}
+
+\textbf{Instruções}
+\begin{itemize}
+ \item Todas as justificativas necessárias na solução de cada questão devem estar presentes nesta avaliação;
+ \item As respostas finais de cada questão devem estar escritas de caneta;
+ \item Esta avaliação tem um total de 30,0 pontos.
+\end{itemize}
+
+\begin{enumerate}
+  \item \textbf{[5,0 pontos]} Na teoria de matrizes, $A^{n}$, $n\in\mathbb{N}^*,$ significa o produto
+    $\overbrace{A\cdot A\cdot\ldots\cdot A}^{n\textrm{ vezes}}$. Considerando
+    essa informação, verifique que a matriz 
+    $A=\begin{bmatrix}
+      1 & \dfrac{1}{y}\\
+      y & 1
+    \end{bmatrix}$, com $y\in\mathbb{R}^{*}$, é solução da equação matricial $X^{2}=2X$.
+
+  \item \textbf{[5,0 pontos]} Dadas as matrizes
+    $A=
+      \begin{bmatrix}
+        1 & 1 \\
+        5 & 18
+      \end{bmatrix},
+      \ \ \ 
+    B=\begin{bmatrix}
+      3 & 5 \\
+      -2 & 4
+    \end{bmatrix}$ e 
+    $C=\begin{bmatrix}
+      2 & x \\
+      y & -6
+    \end{bmatrix}$, determine:
+
+    \begin{enumerate}
+      \item $x , y \in\mathbb{R}$ tais que $AC=BC$.
+     \item quando temos $AC=BC$, podemos ``cancelar'' $C$ e dizer que $A=B$? Explique sua resposta.
+    \end{enumerate}
+
+  \item \textbf{[5,0 pontos]} Sejam $A$ e $B$ duas matrizes quadradas de mesma ordem. Prove que:
+    \begin{enumerate}
+      \item $A + A^t$ é simétrica.
+      \item $A - A^t$ é antissimétrica.
+    \end{enumerate}
+
+  \item \textbf{[4,0 pontos]} Em cada item abaixo dê exemplo de uma matriz $4\times 4$ que atenda aos requisitos solicitados.
+    \begin{enumerate}
+      \item Todos os termos não são nulos e o determinante é igual a $-6$.
+      \item Todos os termos não são inteiros e o determinante é inteiro.
+    \end{enumerate}
+    
+  \item \textbf{[4,0 pontos]} Sabe-se que o determinante da matriz
+    $A=\begin{bmatrix}
+      p & 2 & 2\\
+      p & 4 & 4\\
+      p & 4 & 1
+    \end{bmatrix}$ é $-18$. Sendo assim, calcule
+    o determinante da matriz
+    $B=\begin{bmatrix}
+      p & 2 & 2\\
+      4 & p & 4\\
+      4 & 1 & p
+    \end{bmatrix}$.
+    
+  \item \textbf{[7,0 pontos]} Seja a matriz
+    $A=\begin{bmatrix} 2 & -\dfrac{1}{3}\\ \\ -3 & 2\end{bmatrix}$.
+    Determine o valor de $\lambda$ tal que $\det(A-\lambda I) = 0$.
+
+  \end{enumerate}
+\end{document}

@@ -1,0 +1,104 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\DeclareMathOperator{\sen}{sen}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Matrizes e Sistemas Lineares. \quad Semestre: 2021/1\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \textbf{Lista II}
+\end{center}
+
+\begin{enumerate}
+  \item Em cada item abaixo dê exemplo de uma matriz $4\times 4$ que atenda aos requisitos solicitados.
+    \begin{enumerate}
+      \item Todos os termos não são nulos e o determinante é igual a 5.
+      \item Todos os termos são irracionais e o determinante é racional.
+    \end{enumerate}
+
+  \item O termo $a_{ij}$ de uma matriz $A$ de ordem $10\times 10$ é tal que:
+    $$a_{ij} = \begin{cases}i+j;\,i\geq j \\ 0;\,i<j\end{cases}.$$ O valor do
+    determinante de $A$ é igual a:
+    
+    \begin{tabular}{lllll}
+      (a) $2^{10}\left(10!\right)$. & (b) $2(10!)$. & (c) $10^2(10!)$. & (d) $2\left(10^{10}\right)$. & (e) $2^{55}$.
+    \end{tabular}
+
+  \item Calcule o determinante da matriz $A$ de três formas distintas: pela
+    definição geral; pelo método de Sarrus; por redução à matriz triangular
+    superior. 
+    $$A=\begin{bmatrix}
+      5 & -10 & -1\\
+      -2 & 5 & 2\\
+      -3 & 6 & 1
+    \end{bmatrix}$$
+
+  \item Sabe-se que o determinante da matriz
+    $A=\begin{bmatrix}
+      p & 2 & 2\\
+      p & 4 & 4\\
+      p & 4 & 1
+    \end{bmatrix}$ é $-18$. Sendo assim, calcule
+    o determinante da matriz
+    $B=\begin{bmatrix}
+      p & 2 & 2\\
+      4 & p & 4\\
+      4 & 1 & p
+    \end{bmatrix}$.
+
+  \item Seja a matriz
+    $A=\begin{bmatrix} -13 & 36 \\ -\dfrac{9}{2} & 14 \end{bmatrix}$.
+    Determine o valor de $\lambda$ tal que $\det(A-\lambda I) = 0$.
+
+\end{enumerate}
+  
+\begin{center}
+  \textbf{Gabarito}
+\end{center}
+
+[1] 
+(a) $\begin{bmatrix}
+		1 & 1 & 1 & 1 \\
+		1 & 2 & 2 & 2 \\
+		1 & 1 & 2 & 2 \\
+		1 & 1 & 1 & 6 \\
+	\end{bmatrix}$ 
+(b) $\begin{bmatrix}
+		\pi & \pi & \pi & \pi \\
+		\pi & 1 + \pi & 1 + \pi & 1 + \pi \\
+		\pi & \pi & 1 + \pi & 1 + \pi \\
+		\pi & \pi & \pi & \dfrac{1}{\pi} + \pi \\
+	\end{bmatrix}$. 
+Obs.: esse exercício tem outras respostas válidas.  
+[2] (a) $2^{10}(10!)$. Sugestão: note que a matriz é triangular superior. 
+[3] $\det(A) = 2$. 
+[4] $\det(B) = 7$. 
+[5] $\lambda = 5$ ou $\lambda = -4$. 
+
+\end{document}

@@ -1,0 +1,119 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb, amsfonts, amsmath}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.25cm, right=1.25cm]{geometry}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+  \begin{tabular}{ccc}
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/brasao-de-armas-brasil} \\
+    \end{tabular} & 
+    \begin{tabular}{c}
+      Ministério da Educação \\
+      Universidade Federal dos Vales do Jequitinhonha e Mucuri \\
+      Faculdade de Ciências Sociais, Aplicadas e Exatas - FACSAE \\
+      Departamento de Ciências Exatas - DCEX \\
+      Disciplina: Matrizes e Sistemas Lineares. \quad Semestre: 2021/1\\
+      Prof. Me. Luiz C. M. de Aquino\\
+    \end{tabular} &
+    \begin{tabular}{c}
+      \includegraphics[scale=0.25]{../../biblioteca/imagem/logo-ufvjm} \\
+    \end{tabular}
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \textbf{Lista I}
+\end{center}
+
+\begin{enumerate}
+  \item Considere as seguintes matrizes:
+    $$A = \begin{bmatrix}2 \\ -1 \\ 4\end{bmatrix},\,B = \begin{bmatrix}5 & 3 & -4\end{bmatrix}\textrm{ e }
+    C = \begin{bmatrix}1 & -1 & 0 \\ 2 & 3 & 5 \\ -2 & 8 & 4\end{bmatrix}.
+    $$
+
+    Efetue as operações abaixo:
+    \begin{enumerate}[(a)]
+      \item $A + (BC)^t$.
+      \item $AB + C$.
+      \item $BCA$
+      \item $A^tA + BB^t$.
+    \end{enumerate}
+
+  \item Na teoria de matrizes, $A^{n}$, $n\in\mathbb{N}^*,$ significa o produto
+    $\overbrace{A\cdot A\cdot\ldots\cdot A}^{n\textrm{ vezes}}$. Considerando
+    essa informação, verifique que a matriz 
+    $A=\left[\begin{array}{rr}
+      1 & \dfrac{1}{y}\\
+      y & 1
+    \end{array}\right]$, com $y\in\mathbb{R}^{*}$, é solução da equação $X^{2}=2X$.
+
+  \item Seja a matriz 
+    $S=\left[\begin{array}{rr}
+      1 & 2\\
+      0 & 1
+    \end{array}\right]$. Determine a matriz $B$ tal que $B^{2}=S$.
+
+  \item Dizemos que duas matrizes $A$ e $B$ comutam quando $AB=BA$. Sendo
+    $B=\left[\begin{array}{rr}
+      1 & 1\\
+      0 & 1
+    \end{array}\right]$, determine o formato de todas as matrizes $A$ que comutam com $B$.
+
+  \item Dadas as matrizes:
+    $A=
+      \begin{bmatrix}
+        1 & 3 \\
+        2 & 5
+      \end{bmatrix},
+      \ \ \ 
+    B=\begin{bmatrix}
+      2 & x \\
+      -1 & y
+    \end{bmatrix}$ e 
+    $C=\begin{bmatrix}
+      9 & 3 \\
+      3 & 1
+    \end{bmatrix}$
+
+    \begin{enumerate}
+      \item Determine $x , y \in\mathbb{R}$ tais que $AC=BC$.
+     \item Quando temos $AC=BC$, podemos ``cancelar'' $C$ e dizer que $A=B$? 
+    \end{enumerate}
+
+  \item  Sejam $A$ e $B$ duas matrizes quadradas de mesma ordem. Prove que:
+    \begin{enumerate}
+      \item $(A+B)^t = A^t + B^t$.
+      \item $\left(B^t\right)^t = B$.
+      \item $\left(kB\right)^t = k(B^t)$, com $k\in\mathbb{R}$.
+      \item $A + A^t$ é simétrica.
+      \item $A - A^t$ é antissimétrica.
+    \end{enumerate}
+
+  \end{enumerate}
+  
+\begin{center}
+  \textbf{Gabarito}
+\end{center}
+
+[1] 
+(a) $\begin{bmatrix}21 \\ -29 \\ 3\end{bmatrix}$ 
+(b) $\begin{bmatrix}11 & 5 & -8 \\ -3 & 0 & 9 \\ 18 & 20 & -12\end{bmatrix}$ 
+(c) $\begin{bmatrix} 62 \end{bmatrix}$ 
+(d) $\begin{bmatrix} 71 \end{bmatrix}$ 
+[2] Sugestão: calcule $A\cdot A$ e compare com $2A$. 
+[3] $B = \begin{bmatrix}1 & 1 \\ 0 & 1\end{bmatrix}$ ou $B = \begin{bmatrix}-1 & -1 \\ 0 & -1\end{bmatrix}$ 
+[4] $A = \begin{bmatrix}a & b \\ 0 & a\end{bmatrix}$, com $a, b\in\mathbb{R}$. 
+[5]
+(a) $x = 0$ e $y = 14$. 
+(b) Não podemos, pois não necessariamente teremos $A = B$.
+[6] Sugestão: observe os termos das matrizes.
+
+\end{document}
